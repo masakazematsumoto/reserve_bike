@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_07_110953) do
+ActiveRecord::Schema.define(version: 2020_10_15_071054) do
+
+  create_table "reserves", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "reserve1"
+    t.text "reserve2"
+    t.text "reserve3"
+    t.text "reserve4"
+    t.text "reserve5"
+    t.text "reserve6"
+    t.text "reserve7"
+    t.text "reserve8"
+    t.text "reserve9"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
